@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "786596526785",
+    "firebase_url": "https://restomenu-d866f.firebaseio.com",
+    "project_id": "restomenu-d866f",
+    "storage_bucket": "restomenu-d866f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786596526785:android:863a69f94730fb7e5a3240",
+        "android_client_info": {
+          "package_name": "com.rcorp.restomenu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "786596526785-71smnsvroodcvl92em2kqkcekmcs2u9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAo5DGNDYe3jd1NpHWshi05yM4iGVt8_VQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "786596526785-71smnsvroodcvl92em2kqkcekmcs2u9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
