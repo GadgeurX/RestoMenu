@@ -1,3 +1,6 @@
 <resources>
-
+    <string name="login_screen_login">Se Connecter</string>
+    <string name="login_screen_create_account">Créer un compte</string>
+    <string name="login_screen_email_hint">Email</string>
+    <string name="login_screen_password_hint">Mot de passe</string>
 </resources>

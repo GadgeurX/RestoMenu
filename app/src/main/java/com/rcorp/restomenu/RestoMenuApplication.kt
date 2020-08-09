@@ -2,6 +2,8 @@ package com.rcorp.restomenu
 
 import android.app.Application
 import android.util.Log
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import com.squareup.picasso.OkHttp3Downloader
 import com.squareup.picasso.Picasso
 import io.reactivex.plugins.RxJavaPlugins
@@ -48,7 +50,9 @@ class RestoMenuApplication : Application() {
     companion object {
 
 
-        val appModule = module {}
+        val appModule = module {
+            single { Firebase.auth }
+        }
         private val TAG = this::class.simpleName
     }
 }

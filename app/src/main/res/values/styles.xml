@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:forceDarkAllowed">true</item>
+        <item name="editTextStyle">@style/WhiteEditText</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.NoAction" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:forceDarkAllowed">true</item>
+        <item name="editTextStyle">@style/WhiteEditText</item>
+        <item name="buttonStyle">@style/ButtonStyle</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.LoginStyle" parent="AppTheme.NoAction">
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="BigTitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">35sp</item>
+    </style>
+
+    <style name="BigTitleLogin" parent="BigTitle">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="WhiteEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edittext_background</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:layout_marginEnd">15dp</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+    </style>
+</resources>
