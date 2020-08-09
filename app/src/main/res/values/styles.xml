@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -9,7 +8,6 @@
         <item name="editTextStyle">@style/WhiteEditText</item>
     </style>
 
-    <!-- Base application theme. -->
     <style name="AppTheme.NoAction" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -19,10 +17,9 @@
         <item name="buttonStyle">@style/ButtonStyle</item>
     </style>
 
-    <!-- Base application theme. -->
     <style name="AppTheme.LoginStyle" parent="AppTheme.NoAction">
-        <!-- Customize your theme here. -->
         <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowBackground">@drawable/login_background</item>
     </style>
 
     <style name="BigTitle">

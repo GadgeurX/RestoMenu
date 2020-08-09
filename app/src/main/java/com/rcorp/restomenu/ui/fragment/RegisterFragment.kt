@@ -8,21 +8,22 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
+import com.google.android.material.snackbar.Snackbar
 import com.rcorp.restomenu.R
-import com.rcorp.restomenu.databinding.FragmentLoginBinding
-import com.rcorp.restomenu.ui.viewmodel.LoginViewModel
-import kotlinx.android.synthetic.main.fragment_login.*
+import com.rcorp.restomenu.databinding.FragmentRegisterBinding
+import com.rcorp.restomenu.ui.viewmodel.RegisterViewModel
+import kotlinx.android.synthetic.main.fragment_register.*
 
-class LoginFragment : Fragment() {
+class RegisterFragment : Fragment() {
 
-    lateinit var binding: FragmentLoginBinding
-    private val viewModel: LoginViewModel by viewModels()
+    lateinit var binding: FragmentRegisterBinding
+    private val viewModel: RegisterViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentLoginBinding.inflate(inflater)
+        binding = FragmentRegisterBinding.inflate(inflater)
         binding.lifecycleOwner = viewLifecycleOwner
         binding.viewModel = viewModel
         return binding.root
@@ -31,10 +32,13 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel.state.observe(viewLifecycleOwner, Observer {
-
+            if (it == RegisterViewModel.RegisterState.DONE) {
+                Snackbar.make(requireActivity().window.decorView.findViewById(android.R.id.content), getString(R.string.register_screen_success), Snackbar.LENGTH_SHORT).show()
+                findNavController().navigateUp()
+            }
         })
-        buttonCreateAccount.setOnClickListener {
-            findNavController().navigate(R.id.openRegisterFragment)
+        buttonBack.setOnClickListener {
+            findNavController().navigateUp()
         }
     }
 
