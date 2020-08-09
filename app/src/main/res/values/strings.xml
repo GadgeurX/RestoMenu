@@ -3,4 +3,7 @@
     <string name="login_screen_create_account">Créer un compte</string>
     <string name="login_screen_email_hint">Email</string>
     <string name="login_screen_password_hint">Mot de passe</string>
+
+    <string name="register_screen_title">Créer un compte</string>
+    <string name="register_screen_success">Votre compte a été crée avec succès</string>
 </resources>
